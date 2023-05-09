@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordin</title>
+    <style>
+        .btn{
+            background-color: gray;
+            color: #eee8e8;
+            cursor: pointer;
+            width: 100%;
+            padding: 18px;
+            text-align: left;
+            transition: 0.4s;
+        }
+        .accordin{
+            overflow: hidden;
+            display:none;
+            padding: 0 18px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">section1</button>
+    <div class="accordin">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quasi enim quia vel ut dolorum exercitationem, porro omnis minima eligendi illo placeat commodi optio accusamus inventore atque sequi harum sit.</p>
+    </div>
+    <button class="btn">section1</button>
+    <div class="accordin">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quasi enim quia vel ut dolorum exercitationem, porro omnis minima eligendi illo placeat commodi optio accusamus inventore atque sequi harum sit.</p>
+    </div>
+    <button class="btn">section1</button>
+    <div class="accordin">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quasi enim quia vel ut dolorum exercitationem, porro omnis minima eligendi illo placeat commodi optio accusamus inventore atque sequi harum sit.</p>
+    </div>
+
+    <script>
+        var btn = document.getElementsByClassName("accordin");
+        var i;
+        for (i=0;i< btn.length;i++){
+            btn[i].addEventListener("click", function(){
+                this.classlist.toggle("active");
+                var accordin = this.nextelementsibling;
+                if (panel.style.display === "block") {
+                    accordin.style.display = "none";
+                } else {
+                    accordin.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
