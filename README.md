@@ -1,2 +1,2 @@
 # Html-css-js-PracticeProjects
-Exploring concepets of html,css,js through mini projects.
+Exploring concepts of html,css,js through mini projects.
