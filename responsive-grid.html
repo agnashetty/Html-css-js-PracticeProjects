@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive grid</title>
+
+    <style>
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.col{
+    flex: 25%;
+    max-width: 30%;
+}
+.column, img {
+  margin-top: 8px;
+  vertical-align:middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .col{
+        flex: 50%;
+        max-width: 49%;
+        padding: 1px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="img" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+        </div>
+        <div class="col">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            
+        </div>
+        <div class="col">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-garden-flowers-purple-allium-1674847068.jpeg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>
